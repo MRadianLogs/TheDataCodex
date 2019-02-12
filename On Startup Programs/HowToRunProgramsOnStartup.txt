@@ -1,0 +1,10 @@
+# This file shows you one of the ways in which you can 
+# have programs run on the raspberry pi once it starts up.
+
+1. Using crontab and an .sh file.
+-Create a .sh file that will get the program set up and execute it.
+-Change the permissions of the file to executable by executing this command: chmod +x name_of_file.sh
+-Open the crontab by executing this command: sudo crontab -e
+-Add the following lines to the bottom of the crontab file and save: @reboot /location/of/sh/name_of_file.sh
+--The program will now run on startup. In order to stop the program from running at startup, you can comment/erase the line out of the crontab or .sh.
+--You may be able to run multiple programs using the same .sh file. If not, make another and add it to the crontab!
