@@ -1,0 +1,9 @@
+#This file tells git what files to ignore when "adding" to the stage.
+
+SecCamProject 
+BlueJ Projects
+Greenfoot Projects
+Scratch Projects
+opencv.zip
+opencv_contrib.zip
+opencv-contrib.zip
